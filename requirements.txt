@@ -1,0 +1,3 @@
+mrjob
+scipy
+matplotlib
