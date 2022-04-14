@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.2)  14 APR 2022 15:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.4.2)  14 APR 2022 20:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1050,9 +1050,6 @@ LaTeX Warning: Label `beck' multiply defined.
 
 LaTeX Warning: Label `beck' multiply defined.
 
-
-LaTeX Warning: Label `beck' multiply defined.
-
 )
 \openout1 = `report1.aux'.
 
@@ -1384,7 +1381,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--205
  []
 
 
-Overfull \hbox (72.11667pt too wide) in paragraph at lines 217--218
+Overfull \hbox (72.11667pt too wide) in paragraph at lines 215--216
 []\OT1/cmr/m/n/10.95 skewnorm, \OT1/cmr/bx/it/10.95 https://docs.scipy.org/doc/
 scipy/reference/generated/scipy.stats.skewnorm.html 
  []
@@ -1394,37 +1391,31 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.beck}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.233 \end{document}
+l.231 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{cite.beck}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.233 \end{document}
+l.231 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{cite.beck}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.233 \end{document}
+l.231 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{cite.beck}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.233 \end{document}
+l.231 \end{document}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{cite.beck}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.233 \end{document}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{cite.beck}) h
-as been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.233 \end{document}
+l.231 \end{document}
                     ] (report1.aux)
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1434,7 +1425,7 @@ Package rerunfilecheck Info: File `report1.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  30257 strings out of 478582
- 570230 string characters out of 2838209
+ 570055 string characters out of 2838209
  839170 words of memory out of 3000000
  47870 multiletter control sequences out of 15000+600000
  481525 words of font info for 72 fonts, out of 8000000 for 9000
@@ -1448,7 +1439,7 @@ ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users
 m/cmr10.pfb><C:/Users/ΕΥΑΓΓΕΛΙΑ/AppData/Local/Programs/MiKTeX/fonts/ty
 pe1/public/amsfonts/cm/cmr12.pfb><C:/Users/ΕΥΑΓΓΕΛΙΑ/AppData/Local/Pro
 grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report1.pdf (12 pages, 388525 bytes).
+Output written on report1.pdf (12 pages, 387480 bytes).
 PDF statistics:
  157 PDF objects out of 1000 (max. 8388607)
  30 named destinations out of 1000 (max. 500000)
