@@ -1,0 +1,61 @@
+version: "3.8"
+
+services:
+  mysql-db:
+    image: mysql:8.0.28
+    container_name: mysql-db
+    volumes:
+      - my-db:/var/lib/mysql
+    env_file:
+      - ./env/mysql.env
+    restart: unless-stopped
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    ports:
+      - "8000:80"
+    env_file:
+      - ./env/phpmyadmin.env
+    restart: unless-stopped
+    depends_on:
+      - mysql-db
+
+  redis-cache:
+    image: redis:6.2.6
+    command: redis-server --requirepass ${REDIS_PASSWORD}
+    container_name: redis-cache
+    volumes:
+      - my-cache:/data
+    restart: unless-stopped
+
+  redisinsight:
+    image: redislabs/redisinsight
+    container_name: redisinsight
+    ports:
+      - "8001:8001"
+    volumes:
+      - redisinsight:/db
+    restart: unless-stopped
+    depends_on:
+      - redis-cache
+
+  python-backend:
+    build: ./backend
+    entrypoint: /start-reload.sh
+    container_name: python-backend
+    ports:
+      - "8080:80"
+    volumes:
+      - ./backend/app:/app
+      - ./backend/logs:/logs
+    env_file:
+      - ./env/backend.env
+    depends_on:
+      - mysql-db
+      - redis-cache
+
+volumes:
+  my-db:
+  my-cache:
+  redisinsight:

@@ -1,0 +1,6 @@
+redis
+pymysql
+sqlalchemy
+pydantic
+fastapi_utils
+cryptography
